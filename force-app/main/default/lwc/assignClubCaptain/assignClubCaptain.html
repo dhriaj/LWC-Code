@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-m--top_small slds-m-bottom_medium">
+        <lightning-button variant="brand" label={ShowPalyers} title={Show} ondblclick={handleclick} class="slds-m-left_x-small"></lightning-button>
+    </div>
+    <template if:true={isvisible}>
+        <div style="height :250px"> 
+            <lightning-datatable key-field="id"
+                                data={data}
+                                columns={columns}
+                                onrowaction={handleRowAction}
+                                hide-checkbox-column></lightning-datatable>
+        </div>
+    </template>
+</template>

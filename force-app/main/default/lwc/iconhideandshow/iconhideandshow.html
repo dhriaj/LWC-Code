@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Button Card Hide and Show">
+        <lightning-button variant="brand" label={onlabel} onclick={performuser}>
+
+        </lightning-button>
+    </lightning-card>
+    <template if:true={cardvisible}>
+    <lightning-card title="if true: if false">
+        {mytitle}
+    </lightning-card>
+</template>
+</template>

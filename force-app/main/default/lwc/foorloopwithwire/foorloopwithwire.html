@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="For each loop get record">
+        
+        <template if:true={players.data}>
+            <template for:each={players.data} for:item="Player">
+    <h3 key={Player.Id}>{Player.Name}</h3>
+    
+            </template>
+        </template>
+    
+    
+    </lightning-card>
+    </template>

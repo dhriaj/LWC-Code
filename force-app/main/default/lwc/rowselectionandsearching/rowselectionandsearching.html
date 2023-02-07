@@ -1,0 +1,11 @@
+<template>
+    <lightning-button label={showlist} onclick={handleclick} variant="brand"></lightning-button>  
+    <template if:true={isvisible}>  
+        <lightning-card title=" Show the Contact record"></lightning-card>
+        <lightning-input type="Search" onchange={handlechnage} label="Search" value={searchkey}></lightning-input>
+<lightning-datatable key-field="id" data={data} columns={columns} onrowselection={getselectedrows}></lightning-datatable>
+
+
+    </template>
+  
+</template>

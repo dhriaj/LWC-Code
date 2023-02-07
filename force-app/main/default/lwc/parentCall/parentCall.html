@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="this is Parent and call for call"></lightning-card>
+    <p> count : {countvalue}</p>
+    <c-child-call onsubtract={handelsubtract} onadd={handeladd} onmultiply={handelmultiply} ></c-child-call> 
+
+    <lightning-card title="parent LWC"></lightning-card>
+
+    <lightning-input label="Set counter" type="number"
+    min="0" max="100000" value={startcounter} onchange={handelchange}></lightning-input>
+
+    <lightning-button label="add 100" onclick={handelmixingvalue}></lightning-button>    
+    <c-child-call countvalue1 ={startcounter} ></c-child-call>
+
+
+</template>

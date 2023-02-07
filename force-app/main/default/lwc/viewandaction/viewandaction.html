@@ -1,0 +1,10 @@
+<template>
+    
+<lightning-button variant="brand" label={showlist} title="Show" onclick={handleclick}></lightning-button>
+    
+    <template if:true={isvisible}>
+        <lightning-card title="Show the vie of the record"></lightning-card>
+         <lightning-datatable key-field="id" data={data} columns={columns} onrowaction={rowaction}></lightning-datatable>
+        
+    </template>
+</template>
