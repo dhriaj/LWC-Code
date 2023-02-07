@@ -1,4 +1,4 @@
-import { LightningElement, api } from 'lwc';
+import { LightningElement, api,wire } from 'lwc';
 
 export default class Testing_Record extends LightningElement {
 
