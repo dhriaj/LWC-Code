@@ -1,4 +1,4 @@
-import { LightningElement, api,wire } from 'lwc';
+import { LightningElement, api,wire,track } from 'lwc';
 
 export default class Testing_Record extends LightningElement {
 
@@ -6,7 +6,8 @@ export default class Testing_Record extends LightningElement {
 
 connectedCallback()
 
-  {window.alert(this.recordId);
+  {
+    //window.alert(this.recordId);
 console.log(this.recordId);
 
 }
