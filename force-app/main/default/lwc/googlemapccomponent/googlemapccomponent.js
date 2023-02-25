@@ -29,19 +29,23 @@ this.BillingPostalCode=data.fields.BillingPostalCode.value;
 this.Accountname=data.fields.Name.value;
 const marker=[{
 
-    location : {
+
+   location : {
         Street : this.BillingStreet ? this.BillingStreet :"",
 City : this.BillingCity ? this.BillingCity :"",
 State : this.BillingState ? this.BillingState :"",
 PostalCode: this.BillingPostalCode ? this.BillingPostalCode : "",
 Country : this.BillingCountry ? this.BillingCountry : "",
     },
+   
   title : this.Accountname ? this.Accountname:"",
-  
+  description : "this is test record for testing pruporose",
+
 
 }];
 console.log("Location Data ger",marker);
 this.mapmarkers =marker;
+console.log("Market get the record",mapmarkers);
 this.error=undefined;
 }
 else  if(error)

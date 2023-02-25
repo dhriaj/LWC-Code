@@ -1,0 +1,19 @@
+<template>
+    <lightning-card  title="Hello">
+        <lightning-button label="New" variant="brand" onclick={createNew} class="buttonCSS">New</lightning-button>
+        <p class="slds-p-horizontal_small">
+            <lightning-datatable key-field="Id"  
+                                 data={listRecs}  
+                                 columns={columns}  
+                                 hide-checkbox-column="true"
+                                 class="textCSS">  
+            </lightning-datatable>  
+        </p>
+        <p slot="footer" class="slds-align_absolute-center">            
+            <lightning-button label="View All Cases" variant="brand" onclick={navigateToCaseHome} class="buttonCSS"></lightning-button>          
+        </p>
+    </lightning-card>
+    <template if:true = {error}>  
+        {error}>              
+    </template>
+</template>

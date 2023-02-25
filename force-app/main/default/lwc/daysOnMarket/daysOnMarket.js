@@ -25,6 +25,7 @@ export default class DaysOnMarket extends LightningElement {
     @wire(getRecord, { recordId: '$recordId', fields: FIELDS })
     wiredRecord({ error, data }) {
         if (data) {
+            console.log("Print Property record the Data",data);
             this.error = undefined;
             this.dateListed = getFieldValue(data, DATE_LISTED_FIELD);
             this.daysOnMarket = getFieldValue(data, DAYS_ON_MARKET_FIELD);
@@ -60,7 +61,7 @@ export default class DaysOnMarket extends LightningElement {
         registerListener(
             'dreamhouse__propertySelected',
             this.handlePropertySelected,
-            this
+            //this
         );
     }
 

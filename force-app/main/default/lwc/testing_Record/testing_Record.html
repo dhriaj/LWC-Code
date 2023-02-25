@@ -1,7 +1,11 @@
 <template>
-    <lightning-card title=" who record only">
-        
-        <p>record id: {recordId}</p>
-    
+
+    <lightning-card title="jQueryDemo">
+        <lightning-button variant="brand" label="Click Me" title="click Me" onclick={greetingHandler} slot="actions"></lightning-button>
+
+        <p class="slds-p-horizontal_small" style="display:none;">
+            Hey! Have an awesome day :)
+        </p>
     </lightning-card>
+
 </template>
