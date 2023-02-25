@@ -2,15 +2,15 @@
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>55.0</apiVersion>
     <isExposed>true</isExposed>
-<<<<<<< HEAD
+
     <targets>
         <target>lightning__RecordPage</target>
         <target>lightning__HomePage</target>
     </targets>
     
-=======
+
     <targets><target>lightning__RecordPage</target></targets>
 
     <targets><target>lightning__HomePage</target></targets>
->>>>>>> 6a8461c7f556059fec2db32224e6a47839fd9740
+
 </LightningComponentBundle>
